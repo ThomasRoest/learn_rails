@@ -14,14 +14,14 @@ gem 'jbuilder', '~> 1.2'
 # learn-rails
 gem 'activerecord-tableless'
 gem 'compass-rails', '~> 2.0.alpha.0'
-gem 'figaro'
+gem 'figaro' #provides a generator to set environment variables
 gem 'gibbon'
 gem 'google_drive'
 gem 'high_voltage'
 gem 'simple_form'
 gem 'zurb-foundation'
 group :development do
-gem 'better_errors'
-gem 'quiet_assets'
-gem 'rails_layout'
+gem 'better_errors' #provides more error info
+gem 'quiet_assets' 
+gem 'rails_layout' #provides a generator for a basic (html5) layout
 end
