@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
+ruby '1.9.3'
 gem 'rails', '4.0.1'
 
-gem 'sqlite3'
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
@@ -20,7 +20,14 @@ gem 'high_voltage'
 gem 'simple_form'
 gem 'zurb-foundation'
 group :development do
-gem 'better_errors' #provides more error info
-gem 'quiet_assets' 
-gem 'rails_layout' #provides a generator for a basic (html5) layout
+	gem 'better_errors' #provides more error info
+	gem 'quiet_assets' 
+	gem 'rails_layout' #provides a generator for a basic (html5) layout
+	gem 'sqlite3'
+end
+
+group :production do 
+	gem 'pg'
+	gem 'rails_12factor'
+	gem 'thin'
 end
